@@ -34,6 +34,7 @@ public class Login extends javax.swing.JFrame {
     private void initComponents() {
 
         jButton13 = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         label16 = new java.awt.Label();
         label15 = new java.awt.Label();
@@ -62,8 +63,12 @@ public class Login extends javax.swing.JFrame {
         Help = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
+        Maintain = new javax.swing.JLabel();
 
         jButton13.setText("jButton13");
+
+        jLabel3.setText("jLabel3");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -256,6 +261,14 @@ public class Login extends javax.swing.JFrame {
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 10, 1050, -1));
 
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Maintain.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        Maintain.setText("Maintain");
+        jPanel3.add(Maintain, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, 80, 50));
+
+        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 590, 80, 30));
+
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
@@ -297,6 +310,7 @@ public class Login extends javax.swing.JFrame {
             Consultant.setEnabled(true);
             Help.setEnabled(true);
             FeedBack.setEnabled(true);
+            Maintain.setEnabled(false);
 
         } else if (!(username.contains("User") && (passwork.contains("123")))) {
             Username.setText("");
@@ -314,30 +328,46 @@ public class Login extends javax.swing.JFrame {
             Consultant.setEnabled(false);
             Help.setEnabled(false);
             FeedBack.setEnabled(false);
-           
-           
+           Maintain.setEnabled(false);          
         }
-        temp += 1;
-        
+        if ((username.contains("Admin") && (passwork.contains("123")))) {
+            Username.setText("");
+            Password.setText("");
+
+            Doctor.setEnabled(true);
+            Pharmacy.setEnabled(true);
+            Patient.setEnabled(true);
+            Payment.setEnabled(true);
+            GPA.setEnabled(true);
+            Office.setEnabled(true);
+            Surgery.setEnabled(true);
+            Hospital.setEnabled(true);
+            Specialist.setEnabled(true);
+            Consultant.setEnabled(true);
+            Help.setEnabled(true);
+            FeedBack.setEnabled(true);
+            Maintain.setEnabled(true);
+        }
+        temp += 1;       
         if(temp == 3){
-            System.exit(0);
+            System.exit(0); //ĐĂNG NHẬP 3 LẦN SAI CHƯƠNG TRÌNH TỰ ĐÓNG !!!
         }
     }//GEN-LAST:event_LoginActionPerformed
 
     private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
-//        Doctor.setEnabled(false);
-//        Pharmacy.setEnabled(false);
-//        Patient.setEnabled(false);
-//        Payment.setEnabled(false);
-//        GPA.setEnabled(false);
-//        Office.setEnabled(false);
-//        Surgery.setEnabled(false);
-//        Hospital.setEnabled(false);
-//        Specialist.setEnabled(false);
-//        Consultant.setEnabled(false);
-//        Help.setEnabled(false);
-//        FeedBack.setEnabled(false);
-                                                                            //ĐĂNG NHẬP 3 LẦN SAI CHƯƠNG TRÌNH TỰ ĐÓNG !!!
+        Doctor.setEnabled(false);
+        Pharmacy.setEnabled(false);
+        Patient.setEnabled(false);
+        Payment.setEnabled(false);
+        GPA.setEnabled(false);
+        Office.setEnabled(false);
+        Surgery.setEnabled(false);
+        Hospital.setEnabled(false);
+        Specialist.setEnabled(false);
+        Consultant.setEnabled(false);
+        Help.setEnabled(false);
+        FeedBack.setEnabled(false);
+        Maintain.setEnabled(false);
         
 
     }//GEN-LAST:event_formWindowActivated
@@ -420,6 +450,7 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JButton Help;
     private javax.swing.JButton Hospital;
     private javax.swing.JButton Login;
+    private javax.swing.JLabel Maintain;
     private javax.swing.JButton Office;
     private javax.swing.JPasswordField Password;
     private javax.swing.JButton Patient;
@@ -431,8 +462,10 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JButton jButton13;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
     private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JTextField jtxtReference12;
     private javax.swing.JTextField jtxtReference5;
