@@ -21,6 +21,7 @@ import javax.swing.table.DefaultTableModel;
 public class Doctor extends javax.swing.JFrame {
 
     private JFrame frame;
+
     /**
      * Creates new form Doctor
      */
@@ -35,420 +36,386 @@ public class Doctor extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    // Generated using JFormDesigner Evaluation license - le duc hoa
     private void initComponents() {
-        DoctorRefNo = new Label();
-        Reference = new JTextField();
-        label8 = new Label();
-        label2 = new Label();
-        NumofTablet = new JTextField();
-        Dose = new JTextField();
-        label11 = new Label();
-        IssuedDate = new JTextField();
-        Lot = new JTextField();
-        DailyDose = new JTextField();
-        ExpDate = new JTextField();
-        label7 = new Label();
-        label14 = new Label();
-        label15 = new Label();
-        label16 = new Label();
-        label18 = new Label();
-        FurtherInfor = new JTextField();
-        label23 = new Label();
-        PossibleSide = new JTextField();
-        label24 = new Label();
-        Admin = new JTextField();
-        label25 = new Label();
-        StoreAdvise = new JTextField();
-        label30 = new Label();
-        HowtoUse = new JTextField();
-        label31 = new Label();
-        DrivingUsingMachine = new JTextField();
-        label32 = new Label();
-        DoctorNo = new JTextField();
-        label33 = new Label();
-        PatientID = new JTextField();
-        jScrollPane1 = new JScrollPane();
-        jTable1 = new JTable();
-        jPanel1 = new JPanel();
-        Exit = new JButton();
-        Delete = new JButton();
-        Update = new JButton();
-        Doctor = new JButton();
-        jButton5 = new JButton();
-        Pharmacy = new JButton();
-        Login = new JButton();
-        Reference1 = new JTextField();
 
-        //======== this ========
-        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        var contentPane = getContentPane();
-        contentPane.setLayout(null);
+        DoctorRefNo = new java.awt.Label();
+        label8 = new java.awt.Label();
+        label2 = new java.awt.Label();
+        LastName = new javax.swing.JTextField();
+        FirstName = new javax.swing.JTextField();
+        label11 = new java.awt.Label();
+        Medicalname = new javax.swing.JTextField();
+        PatiID = new javax.swing.JTextField();
+        Poscode = new javax.swing.JTextField();
+        Addresscen = new javax.swing.JTextField();
+        label7 = new java.awt.Label();
+        label14 = new java.awt.Label();
+        label15 = new java.awt.Label();
+        label16 = new java.awt.Label();
+        label18 = new java.awt.Label();
+        Phone1 = new javax.swing.JTextField();
+        label23 = new java.awt.Label();
+        MedialCentralRef = new javax.swing.JTextField();
+        label24 = new java.awt.Label();
+        Fax = new javax.swing.JTextField();
+        label25 = new java.awt.Label();
+        Phone2 = new javax.swing.JTextField();
+        label30 = new java.awt.Label();
+        PatienNum = new javax.swing.JTextField();
+        label31 = new java.awt.Label();
+        Email = new javax.swing.JTextField();
+        label32 = new java.awt.Label();
+        Patiensys = new javax.swing.JTextField();
+        label33 = new java.awt.Label();
+        PatienPhone = new javax.swing.JTextField();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        jPanel1 = new javax.swing.JPanel();
+        Exit = new javax.swing.JButton();
+        Delete = new javax.swing.JButton();
+        Update = new javax.swing.JButton();
+        Doctor = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        Pharmacy = new javax.swing.JButton();
+        Login = new javax.swing.JButton();
+        DocNHSNo = new javax.swing.JTextField();
+        ChoiceDoctor = new javax.swing.JComboBox<>();
 
-        //---- DoctorRefNo ----
-        DoctorRefNo.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-        DoctorRefNo.setFont(new Font("Times New Roman", Font.BOLD, 18));
-        DoctorRefNo.setText("Doctor's Ref No");
-        contentPane.add(DoctorRefNo);
-        DoctorRefNo.setBounds(50, 30, 140, 60);
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        //---- Reference ----
-        Reference.setFont(new Font("Times New Roman", Font.BOLD, 18));
-        Reference.addActionListener(e -> ReferenceActionPerformed(e));
-        contentPane.add(Reference);
-        Reference.setBounds(270, 40, 230, 40);
+        DoctorRefNo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        DoctorRefNo.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        DoctorRefNo.setText("Doctor's Ref No:");
+        getContentPane().add(DoctorRefNo, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, 140, 60));
 
-        //---- label8 ----
-        label8.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-        label8.setFont(new Font("Times New Roman", Font.BOLD, 18));
-        label8.setText("Reference No:");
-        contentPane.add(label8);
-        label8.setBounds(50, 90, 130, 80);
+        label8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        label8.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        label8.setText("Doctor NHS No:");
+        getContentPane().add(label8, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 90, 130, 80));
 
-        //---- label2 ----
-        label2.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-        label2.setFont(new Font("Times New Roman", Font.BOLD, 18));
-        label2.setText("Number of tablets:");
-        contentPane.add(label2);
-        label2.setBounds(50, 220, 170, 100);
+        label2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        label2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        label2.setText("Last name:");
+        getContentPane().add(label2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, 90, 100));
 
-        //---- NumofTablet ----
-        NumofTablet.setFont(new Font("Times New Roman", Font.BOLD, 18));
-        NumofTablet.addActionListener(e -> NumofTabletActionPerformed(e));
-        contentPane.add(NumofTablet);
-        NumofTablet.setBounds(270, 250, 230, 40);
-
-        //---- Dose ----
-        Dose.setFont(new Font("Times New Roman", Font.BOLD, 18));
-        Dose.addActionListener(e -> DoseActionPerformed(e));
-        contentPane.add(Dose);
-        Dose.setBounds(270, 180, 230, 40);
-
-        //---- label11 ----
-        label11.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-        label11.setFont(new Font("Times New Roman", Font.BOLD, 18));
-        label11.setText("Dose:");
-        contentPane.add(label11);
-        label11.setBounds(50, 150, 140, 100);
-
-        //---- IssuedDate ----
-        IssuedDate.setFont(new Font("Times New Roman", Font.BOLD, 18));
-        IssuedDate.addActionListener(e -> IssuedDateActionPerformed(e));
-        contentPane.add(IssuedDate);
-        IssuedDate.setBounds(270, 400, 230, 40);
-
-        //---- Lot ----
-        Lot.setFont(new Font("Times New Roman", Font.BOLD, 18));
-        Lot.addActionListener(e -> LotActionPerformed(e));
-        contentPane.add(Lot);
-        Lot.setBounds(270, 320, 230, 40);
-
-        //---- DailyDose ----
-        DailyDose.setFont(new Font("Times New Roman", Font.BOLD, 18));
-        DailyDose.addActionListener(e -> DailyDoseActionPerformed(e));
-        contentPane.add(DailyDose);
-        DailyDose.setBounds(270, 550, 230, 40);
-
-        //---- ExpDate ----
-        ExpDate.setFont(new Font("Times New Roman", Font.BOLD, 18));
-        ExpDate.addActionListener(e -> ExpDateActionPerformed(e));
-        contentPane.add(ExpDate);
-        ExpDate.setBounds(270, 480, 230, 40);
-
-        //---- label7 ----
-        label7.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-        label7.setFont(new Font("Times New Roman", Font.BOLD, 18));
-        label7.setText("Issued Date:");
-        contentPane.add(label7);
-        label7.setBounds(50, 380, 140, 100);
-
-        //---- label14 ----
-        label14.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-        label14.setFont(new Font("Times New Roman", Font.BOLD, 18));
-        label14.setText("Lot:");
-        contentPane.add(label14);
-        label14.setBounds(50, 310, 60, 100);
-
-        //---- label15 ----
-        label15.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-        label15.setFont(new Font("Times New Roman", Font.BOLD, 18));
-        label15.setText("Daily Dose:");
-        contentPane.add(label15);
-        label15.setBounds(50, 530, 110, 90);
-
-        //---- label16 ----
-        label16.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-        label16.setFont(new Font("Times New Roman", Font.BOLD, 18));
-        label16.setText("Exp Date:");
-        contentPane.add(label16);
-        label16.setBounds(50, 460, 100, 100);
-
-        //---- label18 ----
-        label18.setFont(new Font("Times New Roman", Font.BOLD, 18));
-        label18.setText("Further Information:");
-        contentPane.add(label18);
-        label18.setBounds(700, 80, 170, 100);
-
-        //---- FurtherInfor ----
-        FurtherInfor.setFont(new Font("Times New Roman", Font.BOLD, 24));
-        FurtherInfor.addActionListener(e -> FurtherInforActionPerformed(e));
-        contentPane.add(FurtherInfor);
-        FurtherInfor.setBounds(970, 110, 220, 40);
-
-        //---- label23 ----
-        label23.setFont(new Font("Times New Roman", Font.BOLD, 18));
-        label23.setText("Possible Side Effects:");
-        contentPane.add(label23);
-        label23.setBounds(700, 10, 170, 100);
-
-        //---- PossibleSide ----
-        PossibleSide.setFont(new Font("Times New Roman", Font.BOLD, 24));
-        PossibleSide.addActionListener(e -> PossibleSideActionPerformed(e));
-        contentPane.add(PossibleSide);
-        PossibleSide.setBounds(970, 40, 220, 40);
-
-        //---- label24 ----
-        label24.setFont(new Font("Times New Roman", Font.BOLD, 18));
-        label24.setText("Adminstration:");
-        contentPane.add(label24);
-        label24.setBounds(700, 230, 170, 100);
-
-        //---- Admin ----
-        Admin.setFont(new Font("Times New Roman", Font.BOLD, 24));
-        Admin.addActionListener(e -> AdminActionPerformed(e));
-        contentPane.add(Admin);
-        Admin.setBounds(970, 260, 220, 40);
-
-        //---- label25 ----
-        label25.setFont(new Font("Times New Roman", Font.BOLD, 18));
-        label25.setText("Stogare Advise:");
-        contentPane.add(label25);
-        label25.setBounds(700, 160, 170, 100);
-
-        //---- StoreAdvise ----
-        StoreAdvise.setFont(new Font("Times New Roman", Font.BOLD, 24));
-        StoreAdvise.addActionListener(e -> StoreAdviseActionPerformed(e));
-        contentPane.add(StoreAdvise);
-        StoreAdvise.setBounds(970, 190, 220, 40);
-
-        //---- label30 ----
-        label30.setFont(new Font("Times New Roman", Font.BOLD, 18));
-        label30.setText("How to Use Medication:");
-        contentPane.add(label30);
-        label30.setBounds(700, 380, 170, 100);
-
-        //---- HowtoUse ----
-        HowtoUse.setFont(new Font("Times New Roman", Font.BOLD, 24));
-        HowtoUse.addActionListener(e -> HowtoUseActionPerformed(e));
-        contentPane.add(HowtoUse);
-        HowtoUse.setBounds(970, 410, 220, 40);
-
-        //---- label31 ----
-        label31.setFont(new Font("Times New Roman", Font.BOLD, 18));
-        label31.setText("Driving Using Machines:");
-        contentPane.add(label31);
-        label31.setBounds(700, 310, 170, 100);
-
-        //---- DrivingUsingMachine ----
-        DrivingUsingMachine.setFont(new Font("Times New Roman", Font.BOLD, 24));
-        DrivingUsingMachine.addActionListener(e -> DrivingUsingMachineActionPerformed(e));
-        contentPane.add(DrivingUsingMachine);
-        DrivingUsingMachine.setBounds(970, 340, 220, 40);
-
-        //---- label32 ----
-        label32.setFont(new Font("Times New Roman", Font.BOLD, 18));
-        label32.setText("Doctors NHS No:");
-        contentPane.add(label32);
-        label32.setBounds(700, 530, 170, 100);
-
-        //---- DoctorNo ----
-        DoctorNo.setFont(new Font("Times New Roman", Font.BOLD, 24));
-        DoctorNo.addActionListener(e -> DoctorNoActionPerformed(e));
-        contentPane.add(DoctorNo);
-        DoctorNo.setBounds(970, 560, 220, 40);
-
-        //---- label33 ----
-        label33.setFont(new Font("Times New Roman", Font.BOLD, 18));
-        label33.setText("Patient ID:");
-        contentPane.add(label33);
-        label33.setBounds(700, 460, 170, 100);
-
-        //---- PatientID ----
-        PatientID.setFont(new Font("Times New Roman", Font.BOLD, 24));
-        PatientID.addActionListener(e -> PatientIDActionPerformed(e));
-        contentPane.add(PatientID);
-        PatientID.setBounds(970, 490, 220, 40);
-
-        //======== jScrollPane1 ========
-        {
-
-            //---- jTable1 ----
-            jTable1.setModel(new DefaultTableModel(
-                new Object[][] {
-                },
-                new String[] {
-                    "Name of Tablets", "Reference No", "Lot", "Issued Date", "Exp Date", "Daily Dose", "Further Infor", "Store Advise", "Admin", "Driving Using Machine", "How to Use", "Patient ID", "Doctor No", "Possoble Side"
-                }
-            ));
-            jScrollPane1.setViewportView(jTable1);
-        }
-        contentPane.add(jScrollPane1);
-        jScrollPane1.setBounds(20, 740, 1170, 300);
-
-        //======== jPanel1 ========
-        {
-            jPanel1.setBorder(new LineBorder(Color.black, 3));
-            jPanel1.setBorder(new javax.swing.border.CompoundBorder(new javax.swing.border.TitledBorder(new javax.swing.border
-            .EmptyBorder(0,0,0,0), "JF\u006frmDes\u0069gner \u0045valua\u0074ion",javax.swing.border.TitledBorder.CENTER,javax
-            .swing.border.TitledBorder.BOTTOM,new java.awt.Font("D\u0069alog",java.awt.Font.BOLD,
-            12),java.awt.Color.red),jPanel1. getBorder()));jPanel1. addPropertyChangeListener(new java.beans
-            .PropertyChangeListener(){@Override public void propertyChange(java.beans.PropertyChangeEvent e){if("\u0062order".equals(e.
-            getPropertyName()))throw new RuntimeException();}});
-            jPanel1.setLayout(null);
-
-            //---- Exit ----
-            Exit.setText("Exit");
-            Exit.addActionListener(e -> ExitActionPerformed(e));
-            jPanel1.add(Exit);
-            Exit.setBounds(1050, 30, 110, 30);
-
-            //---- Delete ----
-            Delete.setText("Delete");
-            Delete.addActionListener(e -> DeleteActionPerformed(e));
-            jPanel1.add(Delete);
-            Delete.setBounds(40, 30, 110, 30);
-
-            //---- Update ----
-            Update.setText("Update");
-            Update.addActionListener(e -> UpdateActionPerformed(e));
-            jPanel1.add(Update);
-            Update.setBounds(200, 30, 110, 30);
-
-            //---- Doctor ----
-            Doctor.setText("Doctor");
-            Doctor.addActionListener(e -> DoctorActionPerformed(e));
-            jPanel1.add(Doctor);
-            Doctor.setBounds(360, 30, 110, 30);
-
-            //---- jButton5 ----
-            jButton5.setText("GP Appointment");
-            jButton5.addActionListener(e -> jButton5ActionPerformed(e));
-            jPanel1.add(jButton5);
-            jButton5.setBounds(530, 30, 110, 30);
-
-            //---- Pharmacy ----
-            Pharmacy.setText("Pharmacy");
-            Pharmacy.addActionListener(e -> PharmacyActionPerformed(e));
-            jPanel1.add(Pharmacy);
-            Pharmacy.setBounds(700, 30, 110, 30);
-
-            //---- Login ----
-            Login.setText("Login");
-            Login.addActionListener(e -> LoginActionPerformed(e));
-            jPanel1.add(Login);
-            Login.setBounds(880, 30, 110, 30);
-
-            {
-                // compute preferred size
-                Dimension preferredSize = new Dimension();
-                for(int i = 0; i < jPanel1.getComponentCount(); i++) {
-                    Rectangle bounds = jPanel1.getComponent(i).getBounds();
-                    preferredSize.width = Math.max(bounds.x + bounds.width, preferredSize.width);
-                    preferredSize.height = Math.max(bounds.y + bounds.height, preferredSize.height);
-                }
-                Insets insets = jPanel1.getInsets();
-                preferredSize.width += insets.right;
-                preferredSize.height += insets.bottom;
-                jPanel1.setMinimumSize(preferredSize);
-                jPanel1.setPreferredSize(preferredSize);
+        LastName.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        LastName.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LastNameActionPerformed(evt);
             }
-        }
-        contentPane.add(jPanel1);
-        jPanel1.setBounds(20, 630, 1170, 90);
+        });
+        getContentPane().add(LastName, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 250, 230, 40));
 
-        //---- Reference1 ----
-        Reference1.setFont(new Font("Times New Roman", Font.BOLD, 18));
-        Reference1.addActionListener(e -> Reference1ActionPerformed(e));
-        contentPane.add(Reference1);
-        Reference1.setBounds(270, 100, 230, 40);
-
-        {
-            // compute preferred size
-            Dimension preferredSize = new Dimension();
-            for(int i = 0; i < contentPane.getComponentCount(); i++) {
-                Rectangle bounds = contentPane.getComponent(i).getBounds();
-                preferredSize.width = Math.max(bounds.x + bounds.width, preferredSize.width);
-                preferredSize.height = Math.max(bounds.y + bounds.height, preferredSize.height);
+        FirstName.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        FirstName.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FirstNameActionPerformed(evt);
             }
-            Insets insets = contentPane.getInsets();
-            preferredSize.width += insets.right;
-            preferredSize.height += insets.bottom;
-            contentPane.setMinimumSize(preferredSize);
-            contentPane.setPreferredSize(preferredSize);
-        }
+        });
+        getContentPane().add(FirstName, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 180, 230, 40));
+
+        label11.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        label11.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        label11.setText("First name:");
+        getContentPane().add(label11, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, 90, 100));
+
+        Medicalname.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        Medicalname.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MedicalnameActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Medicalname, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 400, 230, 40));
+
+        PatiID.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        PatiID.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PatiIDActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PatiID, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 320, 230, 40));
+
+        Poscode.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        Poscode.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PoscodeActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Poscode, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 550, 230, 40));
+
+        Addresscen.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        Addresscen.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AddresscenActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Addresscen, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 480, 230, 40));
+
+        label7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        label7.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        label7.setText("Medical cental name:");
+        getContentPane().add(label7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 380, 180, 100));
+
+        label14.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        label14.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        label14.setText("Patient ID:");
+        getContentPane().add(label14, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 310, 120, 100));
+
+        label15.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        label15.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        label15.setText("Post code:");
+        getContentPane().add(label15, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 530, 80, 90));
+
+        label16.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        label16.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        label16.setText("Address central:");
+        getContentPane().add(label16, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 460, 130, 100));
+
+        label18.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        label18.setText("Phone 1:");
+        getContentPane().add(label18, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 80, 80, 100));
+
+        Phone1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        Phone1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Phone1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Phone1, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 110, 220, 40));
+
+        label23.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        label23.setText("Medical central ref:");
+        getContentPane().add(label23, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 10, 170, 100));
+
+        MedialCentralRef.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        MedialCentralRef.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MedialCentralRefActionPerformed(evt);
+            }
+        });
+        getContentPane().add(MedialCentralRef, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 40, 220, 40));
+
+        label24.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        label24.setText("Fax NO:");
+        getContentPane().add(label24, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 230, 80, 100));
+
+        Fax.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        Fax.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FaxActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Fax, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 260, 220, 40));
+
+        label25.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        label25.setText("Phone 2:");
+        getContentPane().add(label25, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 160, 80, 100));
+
+        Phone2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        Phone2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Phone2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Phone2, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 190, 220, 40));
+
+        label30.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        label30.setText("Patient NHS num:");
+        getContentPane().add(label30, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 380, -1, 100));
+
+        PatienNum.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        PatienNum.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PatienNumActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PatienNum, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 410, 220, 40));
+
+        label31.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        label31.setText("Email address:");
+        getContentPane().add(label31, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 310, 130, 100));
+
+        Email.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        Email.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                EmailActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Email, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 340, 220, 40));
+
+        label32.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        label32.setText("Patient's symptom:");
+        getContentPane().add(label32, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 530, -1, 100));
+
+        Patiensys.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        Patiensys.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PatiensysActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Patiensys, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 560, 220, 40));
+
+        label33.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        label33.setText("Patient's phone:");
+        getContentPane().add(label33, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 460, 140, 100));
+
+        PatienPhone.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        PatienPhone.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PatienPhoneActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PatienPhone, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 490, 220, 40));
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Doctor's Ref No", "Doctor NHS No", "First Name", "Last Name", "Patient ID", "Medical cental name", "Address central", "Post code", "Medical central ref", "Phone 1 ", "Phone 2", "Fax", "Email address", "Patient's phone", "Patient's symptom"
+            }
+        ));
+        jScrollPane1.setViewportView(jTable1);
+
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 740, 1170, 300));
+
+        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Exit.setText("Exit");
+        Exit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ExitActionPerformed(evt);
+            }
+        });
+        jPanel1.add(Exit, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 30, 110, 30));
+
+        Delete.setText("Delete");
+        Delete.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DeleteActionPerformed(evt);
+            }
+        });
+        jPanel1.add(Delete, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, 110, 30));
+
+        Update.setText("Update");
+        Update.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                UpdateActionPerformed(evt);
+            }
+        });
+        jPanel1.add(Update, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 30, 110, 30));
+
+        Doctor.setText("Doctor");
+        Doctor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DoctorActionPerformed(evt);
+            }
+        });
+        jPanel1.add(Doctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 30, 110, 30));
+
+        jButton5.setText("GP Appointment");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 30, 110, 30));
+
+        Pharmacy.setText("Pharmacy");
+        Pharmacy.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PharmacyActionPerformed(evt);
+            }
+        });
+        jPanel1.add(Pharmacy, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 30, 110, 30));
+
+        Login.setText("Login");
+        Login.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LoginActionPerformed(evt);
+            }
+        });
+        jPanel1.add(Login, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 30, 110, 30));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 630, 1170, 90));
+
+        DocNHSNo.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        DocNHSNo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DocNHSNoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(DocNHSNo, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 100, 230, 40));
+
+        ChoiceDoctor.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        ChoiceDoctor.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select Doctor's Ref", "P000123", "K111569", "J444256", "Q663112" }));
+        ChoiceDoctor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ChoiceDoctorActionPerformed(evt);
+            }
+        });
+        getContentPane().add(ChoiceDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 40, 230, 40));
+
         pack();
-        setLocationRelativeTo(getOwner());
     }// </editor-fold>//GEN-END:initComponents
 
-    private void ReferenceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ReferenceActionPerformed
+    private void LastNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LastNameActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_ReferenceActionPerformed
+    }//GEN-LAST:event_LastNameActionPerformed
 
-    private void NumofTabletActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NumofTabletActionPerformed
+    private void FirstNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FirstNameActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_NumofTabletActionPerformed
+    }//GEN-LAST:event_FirstNameActionPerformed
 
-    private void DoseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DoseActionPerformed
+    private void MedicalnameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MedicalnameActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_DoseActionPerformed
+    }//GEN-LAST:event_MedicalnameActionPerformed
 
-    private void IssuedDateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IssuedDateActionPerformed
+    private void PatiIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PatiIDActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_IssuedDateActionPerformed
+    }//GEN-LAST:event_PatiIDActionPerformed
 
-    private void LotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LotActionPerformed
+    private void PoscodeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PoscodeActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_LotActionPerformed
+    }//GEN-LAST:event_PoscodeActionPerformed
 
-    private void DailyDoseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DailyDoseActionPerformed
+    private void AddresscenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddresscenActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_DailyDoseActionPerformed
+    }//GEN-LAST:event_AddresscenActionPerformed
 
-    private void ExpDateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExpDateActionPerformed
+    private void Phone1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Phone1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_ExpDateActionPerformed
+    }//GEN-LAST:event_Phone1ActionPerformed
 
-    private void FurtherInforActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FurtherInforActionPerformed
+    private void MedialCentralRefActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MedialCentralRefActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_FurtherInforActionPerformed
+    }//GEN-LAST:event_MedialCentralRefActionPerformed
 
-    private void PossibleSideActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PossibleSideActionPerformed
+    private void FaxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FaxActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_PossibleSideActionPerformed
+    }//GEN-LAST:event_FaxActionPerformed
 
-    private void AdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AdminActionPerformed
+    private void Phone2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Phone2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_AdminActionPerformed
+    }//GEN-LAST:event_Phone2ActionPerformed
 
-    private void StoreAdviseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_StoreAdviseActionPerformed
+    private void PatienNumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PatienNumActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_StoreAdviseActionPerformed
+    }//GEN-LAST:event_PatienNumActionPerformed
 
-    private void HowtoUseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HowtoUseActionPerformed
+    private void EmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EmailActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_HowtoUseActionPerformed
+    }//GEN-LAST:event_EmailActionPerformed
 
-    private void DrivingUsingMachineActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DrivingUsingMachineActionPerformed
+    private void PatiensysActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PatiensysActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_DrivingUsingMachineActionPerformed
+    }//GEN-LAST:event_PatiensysActionPerformed
 
-    private void DoctorNoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DoctorNoActionPerformed
+    private void PatienPhoneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PatienPhoneActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_DoctorNoActionPerformed
-
-    private void PatientIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PatientIDActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_PatientIDActionPerformed
+    }//GEN-LAST:event_PatienPhoneActionPerformed
 
     private void ExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExitActionPerformed
         frame = new JFrame("Exit");
@@ -459,15 +426,13 @@ public class Doctor extends javax.swing.JFrame {
 
     private void DeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DeleteActionPerformed
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-        if(jTable1.getSelectedRow() == -1){
-            if(jTable1.getRowCount() == 0){
+        if (jTable1.getSelectedRow() == -1) {
+            if (jTable1.getRowCount() == 0) {
                 JOptionPane.showMessageDialog(null, "No data to delete!!!");
-            }
-            else{
+            } else {
                 JOptionPane.showMessageDialog(null, "Select a row to delete", "Medical store billing", JOptionPane.OK_OPTION);
             }
-        }
-        else{
+        } else {
             model.removeRow(jTable1.getSelectedRow());
         }
     }//GEN-LAST:event_DeleteActionPerformed
@@ -476,10 +441,10 @@ public class Doctor extends javax.swing.JFrame {
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
 
         //if((NameTablets.getSelectedItem()).equals("Ibuprofen")){
-            model.addRow(new Object[]{DoctorRefNo.getText(), DoctorRefNo.getText(), NumofTablet.getText(),
-                Lot.getText(), PossibleSide.getText(), FurtherInfor.getText(), StoreAdvise.getText(), IssuedDate.getText(),
-                ExpDate.getText(), DailyDose.getText(), Admin.getText(), DrivingUsingMachine.getText(), HowtoUse.getText(),
-                PatientID.getText(), DoctorNo.getText()});
+        model.addRow(new Object[]{DoctorRefNo.getText(), DoctorRefNo.getText(), LastName.getText(),
+            PatiID.getText(), MedialCentralRef.getText(), Phone1.getText(), Phone2.getText(), Medicalname.getText(),
+            Addresscen.getText(), Poscode.getText(), Fax.getText(), Email.getText(), PatienNum.getText(),
+            PatienPhone.getText(), Patiensys.getText()});
 
         //}
 
@@ -503,9 +468,94 @@ public class Doctor extends javax.swing.JFrame {
         myLogin.setVisible(true);
     }//GEN-LAST:event_LoginActionPerformed
 
-    private void Reference1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Reference1ActionPerformed
+    private void DocNHSNoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DocNHSNoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Reference1ActionPerformed
+    }//GEN-LAST:event_DocNHSNoActionPerformed
+
+    private void ChoiceDoctorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ChoiceDoctorActionPerformed
+        if (ChoiceDoctor.getSelectedItem().equals("P000123")) {           //Select Doctor's Ref, P000123, K111569, J444256, Q663112
+            DocNHSNo.setText("Dr1440469");
+            FirstName.setText("Paul");
+            LastName.setText("Lee");
+            PatiID.setText("201900015");
+            Medicalname.setText("Sillicon Medical Central");
+            Addresscen.setText("125/35/53/25 Yellow leaves street");
+            Poscode.setText("CT135");
+            MedialCentralRef.setText("HRC192168");
+            Phone1.setText("0333333111");
+            Phone2.setText("0111111264");
+            Fax.setText("0209623154");
+            Email.setText("HoaLDCE140469@fpt.edu.vn");
+            PatienNum.setText("000-169");
+            PatienPhone.setText("0789642158");
+            Patiensys.setText("Sleep so much");
+
+        } else if (ChoiceDoctor.getSelectedItem().equals("K111569")) {
+            DocNHSNo.setText("Dr1440468");
+            FirstName.setText("Hoa");
+            LastName.setText("Lee");
+            PatiID.setText("201900016");
+            Medicalname.setText("Sillicon Medical Central");
+            Addresscen.setText("125/35/53/25 Yellow leaves street");
+            Poscode.setText("CT135");
+            MedialCentralRef.setText("HRC192168");
+            Phone1.setText("0256333222");
+            Phone2.setText("0111231269");
+            Fax.setText("0209458954");
+            Email.setText("HoaLDCE140469@fpt.edu.vn");
+            PatienNum.setText("000-169");
+            PatienPhone.setText("078961258");
+            Patiensys.setText("Can't Sleep");
+        } else if (ChoiceDoctor.getSelectedItem().equals("J444256")) {
+            DocNHSNo.setText("Dr1445669");
+            FirstName.setText("Nuyc");
+            LastName.setText("Hoy");
+            PatiID.setText("225300151");
+            Medicalname.setText("Sillicon Medical Central");
+            Addresscen.setText("125/35/53/25 Yellow leaves street");
+            Poscode.setText("CT135");
+            MedialCentralRef.setText("HRC192168");
+            Phone1.setText("033467981");
+            Phone2.setText("0101211264");
+            Fax.setText("0209784154");
+            Email.setText("HoaLDCE140469@fpt.edu.vn");
+            PatienNum.setText("000-987");
+            PatienPhone.setText("0654142158");
+            Patiensys.setText("Easy Cry");
+        } else if (ChoiceDoctor.getSelectedItem().equals("Q663112")) {
+            DocNHSNo.setText("Dr1423669");
+            FirstName.setText("Depvl");
+            LastName.setText("Sthoy");
+            PatiID.setText("225213151");
+            Medicalname.setText("Sillicon Medical Central");
+            Addresscen.setText("125/35/53/25 Yellow leaves street");
+            Poscode.setText("CT135");
+            MedialCentralRef.setText("HRC192168");
+            Phone1.setText("033014781");
+            Phone2.setText("0175632164");
+            Fax.setText("0209784154");
+            Email.setText("HoaLDCE140469@fpt.edu.vn");
+            PatienNum.setText("000-925");
+            PatienPhone.setText("0651235158");
+            Patiensys.setText("Vomiting");
+        } else if (ChoiceDoctor.getSelectedItem().equals("Select Doctor's Ref")) {
+            DocNHSNo.setText("");
+            FirstName.setText("");
+            LastName.setText("");
+            PatiID.setText("");
+            Medicalname.setText("");
+            Addresscen.setText("");
+            Poscode.setText("");
+            MedialCentralRef.setText("");
+            Phone1.setText("");
+            Phone2.setText("");
+            Fax.setText("");
+            Email.setText("");
+            PatienNum.setText("");
+            PatienPhone.setText("");
+            Patiensys.setText("");
+        }
+    }//GEN-LAST:event_ChoiceDoctorActionPerformed
 
     /**
      * @param args the command line arguments
@@ -543,48 +593,47 @@ public class Doctor extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    // Generated using JFormDesigner Evaluation license - le duc hoa
-    private Label DoctorRefNo;
-    private JTextField Reference;
-    private Label label8;
-    private Label label2;
-    private JTextField NumofTablet;
-    private JTextField Dose;
-    private Label label11;
-    private JTextField IssuedDate;
-    private JTextField Lot;
-    private JTextField DailyDose;
-    private JTextField ExpDate;
-    private Label label7;
-    private Label label14;
-    private Label label15;
-    private Label label16;
-    private Label label18;
-    private JTextField FurtherInfor;
-    private Label label23;
-    private JTextField PossibleSide;
-    private Label label24;
-    private JTextField Admin;
-    private Label label25;
-    private JTextField StoreAdvise;
-    private Label label30;
-    private JTextField HowtoUse;
-    private Label label31;
-    private JTextField DrivingUsingMachine;
-    private Label label32;
-    private JTextField DoctorNo;
-    private Label label33;
-    private JTextField PatientID;
-    private JScrollPane jScrollPane1;
-    private JTable jTable1;
-    private JPanel jPanel1;
-    private JButton Exit;
-    private JButton Delete;
-    private JButton Update;
-    private JButton Doctor;
-    private JButton jButton5;
-    private JButton Pharmacy;
-    private JButton Login;
-    private JTextField Reference1;
+    private javax.swing.JTextField Addresscen;
+    private javax.swing.JComboBox<String> ChoiceDoctor;
+    private javax.swing.JButton Delete;
+    private javax.swing.JTextField DocNHSNo;
+    private javax.swing.JButton Doctor;
+    private java.awt.Label DoctorRefNo;
+    private javax.swing.JTextField Email;
+    private javax.swing.JButton Exit;
+    private javax.swing.JTextField Fax;
+    private javax.swing.JTextField FirstName;
+    private javax.swing.JTextField LastName;
+    private javax.swing.JButton Login;
+    private javax.swing.JTextField MedialCentralRef;
+    private javax.swing.JTextField Medicalname;
+    private javax.swing.JTextField PatiID;
+    private javax.swing.JTextField PatienNum;
+    private javax.swing.JTextField PatienPhone;
+    private javax.swing.JTextField Patiensys;
+    private javax.swing.JButton Pharmacy;
+    private javax.swing.JTextField Phone1;
+    private javax.swing.JTextField Phone2;
+    private javax.swing.JTextField Poscode;
+    private javax.swing.JButton Update;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable jTable1;
+    private java.awt.Label label11;
+    private java.awt.Label label14;
+    private java.awt.Label label15;
+    private java.awt.Label label16;
+    private java.awt.Label label18;
+    private java.awt.Label label2;
+    private java.awt.Label label23;
+    private java.awt.Label label24;
+    private java.awt.Label label25;
+    private java.awt.Label label30;
+    private java.awt.Label label31;
+    private java.awt.Label label32;
+    private java.awt.Label label33;
+    private java.awt.Label label7;
+    private java.awt.Label label8;
     // End of variables declaration//GEN-END:variables
 }

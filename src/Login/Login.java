@@ -161,6 +161,11 @@ public class Login extends javax.swing.JFrame {
 
         Office.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         Office.setText("Office");
+        Office.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                OfficeActionPerformed(evt);
+            }
+        });
         getContentPane().add(Office, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 480, 110, 40));
 
         Doctor.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
@@ -268,14 +273,15 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_PasswordActionPerformed
 
     private void GPAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GPAActionPerformed
-        // TODO add your handling code here:
+        Pharmacy iPharmacy = new Pharmacy();
+        iPharmacy.setVisible(true);
     }//GEN-LAST:event_GPAActionPerformed
 
     private void LoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LoginActionPerformed
         String username = Username.getText();
         String passwork = Password.getText();
 
-        if (username.contains("leduchoa@user") && (passwork.contains("123"))) {
+        if (username.contains("User") && (passwork.contains("123"))) {
             Username.setText("");
             Password.setText("");
 
@@ -292,7 +298,7 @@ public class Login extends javax.swing.JFrame {
             Help.setEnabled(true);
             FeedBack.setEnabled(true);
 
-        } else if (!(username.contains("one") && (passwork.contains("one")))) {
+        } else if (!(username.contains("User") && (passwork.contains("123")))) {
             Username.setText("");
             Password.setText("");
 
@@ -311,38 +317,40 @@ public class Login extends javax.swing.JFrame {
            
            
         }
-    }//GEN-LAST:event_LoginActionPerformed
-
-    private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
-        Doctor.setEnabled(false);
-        Pharmacy.setEnabled(false);
-        Patient.setEnabled(false);
-        Payment.setEnabled(false);
-        GPA.setEnabled(false);
-        Office.setEnabled(false);
-        Surgery.setEnabled(false);
-        Hospital.setEnabled(false);
-        Specialist.setEnabled(false);
-        Consultant.setEnabled(false);
-        Help.setEnabled(false);
-        FeedBack.setEnabled(false);
-        
         temp += 1;
         
         if(temp == 3){
             System.exit(0);
         }
+    }//GEN-LAST:event_LoginActionPerformed
+
+    private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
+//        Doctor.setEnabled(false);
+//        Pharmacy.setEnabled(false);
+//        Patient.setEnabled(false);
+//        Payment.setEnabled(false);
+//        GPA.setEnabled(false);
+//        Office.setEnabled(false);
+//        Surgery.setEnabled(false);
+//        Hospital.setEnabled(false);
+//        Specialist.setEnabled(false);
+//        Consultant.setEnabled(false);
+//        Help.setEnabled(false);
+//        FeedBack.setEnabled(false);
+                                                                            //ĐĂNG NHẬP 3 LẦN SAI CHƯƠNG TRÌNH TỰ ĐÓNG !!!
+        
 
     }//GEN-LAST:event_formWindowActivated
 
     private void PatientActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PatientActionPerformed
-        // TODO add your handling code here:
+        Pharmacy iPharmacy = new Pharmacy();
+        iPharmacy.setVisible(true);
     }//GEN-LAST:event_PatientActionPerformed
 
     private JFrame frame;
     private void ExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExitActionPerformed
         frame = new JFrame("Exit");
-        if (JOptionPane.showConfirmDialog(frame, "Do you want to exit?", "Medical store billing", JOptionPane.YES_NO_OPTION) == JOptionPane.NO_OPTION) {
+        if (JOptionPane.showConfirmDialog(frame, "Do you want to exit?", "Medical store billing", JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION) {
             System.exit(0);
         }
     }//GEN-LAST:event_ExitActionPerformed
@@ -361,6 +369,11 @@ public class Login extends javax.swing.JFrame {
         Doctor iDoctor = new Doctor();
         iDoctor.setVisible(true);
     }//GEN-LAST:event_DoctorActionPerformed
+
+    private void OfficeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OfficeActionPerformed
+        Pharmacy iPharmacy = new Pharmacy();
+        iPharmacy.setVisible(true);
+    }//GEN-LAST:event_OfficeActionPerformed
 
     /**
      * @param args the command line arguments

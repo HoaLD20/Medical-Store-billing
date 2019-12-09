@@ -76,8 +76,8 @@ public class Pharmacy extends javax.swing.JFrame {
         Delete = new javax.swing.JButton();
         Update = new javax.swing.JButton();
         Doctor = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        GPA = new javax.swing.JButton();
+        Patient = new javax.swing.JButton();
         Login = new javax.swing.JButton();
 
         label9.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
@@ -334,21 +334,21 @@ public class Pharmacy extends javax.swing.JFrame {
         });
         jPanel1.add(Doctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 30, 110, 30));
 
-        jButton5.setText("GP Appointment");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        GPA.setText("GP Appointment");
+        GPA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                GPAActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 30, 110, 30));
+        jPanel1.add(GPA, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 30, 110, 30));
 
-        jButton6.setText("Pharmacy");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        Patient.setText("Patient");
+        Patient.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                PatientActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 30, 110, 30));
+        jPanel1.add(Patient, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 30, 110, 30));
 
         Login.setText("Login");
         Login.addActionListener(new java.awt.event.ActionListener() {
@@ -493,6 +493,23 @@ public class Pharmacy extends javax.swing.JFrame {
            PatientID.setText("P0004");
            DoctorNo.setText("51236");
        }
+       else if(NameTablets.getSelectedItem().equals("Selection")){
+           Reference.setText("");
+           Dose.setText("");
+           NumofTablet.setText("");
+           Lot.setText("");
+           IssuedDate.setText("");
+           ExpDate.setText("");
+           DailyDose.setText("");
+           PossibleSide.setText("");
+           FurtherInfor.setText("");
+           StoreAdvise.setText("");
+           Admin.setText("");
+           DrivingUsingMachine.setText("");
+           HowtoUse.setText("");
+           PatientID.setText("");
+           DoctorNo.setText("");
+       }
 
     }//GEN-LAST:event_NameTabletsActionPerformed
         private JFrame frame;
@@ -536,13 +553,16 @@ public class Pharmacy extends javax.swing.JFrame {
         iDoctor.setVisible(true);
     }//GEN-LAST:event_DoctorActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    private void GPAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GPAActionPerformed
+        Pharmacy iPharmacy = new Pharmacy();
+        iPharmacy.setVisible(true);
+                  
+    }//GEN-LAST:event_GPAActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
+    private void PatientActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PatientActionPerformed
+        Doctor iDoctor = new Doctor();
+        iDoctor.setVisible(true);
+    }//GEN-LAST:event_PatientActionPerformed
 
     private void LoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LoginActionPerformed
         Login myLogin = new Login();
@@ -595,19 +615,19 @@ public class Pharmacy extends javax.swing.JFrame {
     private javax.swing.JButton Exit;
     private javax.swing.JTextField ExpDate;
     private javax.swing.JTextField FurtherInfor;
+    private javax.swing.JButton GPA;
     private javax.swing.JTextField HowtoUse;
     private javax.swing.JTextField IssuedDate;
     private javax.swing.JButton Login;
     private javax.swing.JTextField Lot;
     private javax.swing.JComboBox<String> NameTablets;
     private javax.swing.JTextField NumofTablet;
+    private javax.swing.JButton Patient;
     private javax.swing.JTextField PatientID;
     private javax.swing.JTextField PossibleSide;
     private javax.swing.JTextField Reference;
     private javax.swing.JTextField StoreAdvise;
     private javax.swing.JButton Update;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
